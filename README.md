@@ -52,7 +52,6 @@ docker-compose down
 ```
 my_fitness_bot_v2.0/
 ├── tg_bot.py            # основной бот
-├── tg_bot_container.py  # версия для Docker
 ├── data.json            # данные пользователей
 ├── .env                 # токен и ID (не публикуй!)
 ├── docker-compose.yml
@@ -118,7 +117,6 @@ docker-compose down
 ```
 my_fitness_bot_v2.0/
 ├── tg_bot.py            # main bot
-├── tg_bot_container.py  # Docker version
 ├── data.json            # user data storage
 ├── .env                 # token & ID (keep private!)
 ├── docker-compose.yml
