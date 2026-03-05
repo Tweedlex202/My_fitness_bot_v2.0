@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  fitness-bot:
+    build: .
+    container_name: fitness-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data.json:/app/data.json          # персистентные данные пользователей
+      - ./logs:/app/logs                    # логи
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
